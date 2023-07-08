@@ -60,6 +60,7 @@ class MyHomePage extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 style: const ButtonStyle(
+                  foregroundColor: MaterialStatePropertyAll(Colors.black),
                   backgroundColor: MaterialStatePropertyAll(Colors.white),
                   textStyle: MaterialStatePropertyAll(
                     TextStyle(color: Colors.black),
