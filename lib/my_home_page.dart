@@ -56,10 +56,14 @@ class MyHomePage extends StatelessWidget {
                     decimal: true,
                   ),
                 ),
-                
               ),
-              TextButton(onPressed: (){
-              }, child: const Text("Convert"))
+              TextButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.white),
+                ),
+                child: const Text("Convert"),
+              ),
             ],
           ),
         ),
