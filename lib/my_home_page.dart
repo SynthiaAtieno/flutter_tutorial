@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 style: const ButtonStyle(
-                  fixedSize: MaterialStatePropertyAll(Size(200, 50)),
+                  fixedSize: MaterialStatePropertyAll(Size(double.infinity, 50)),
                   foregroundColor: MaterialStatePropertyAll(Colors.black),
                   backgroundColor: MaterialStatePropertyAll(Colors.white),
                 ),
