@@ -57,14 +57,18 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              TextButton(
-                onPressed: () {},
-                style: const ButtonStyle(
-                  fixedSize: MaterialStatePropertyAll(Size(double.infinity, 50)),
-                  foregroundColor: MaterialStatePropertyAll(Colors.black),
-                  backgroundColor: MaterialStatePropertyAll(Colors.white),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextButton(
+                  onPressed: () {},
+                  style: const ButtonStyle(
+                    minimumSize:
+                        MaterialStatePropertyAll(Size(double.infinity, 50)),
+                    foregroundColor: MaterialStatePropertyAll(Colors.black),
+                    backgroundColor: MaterialStatePropertyAll(Colors.white),
+                  ),
+                  child: const Text("Convert"),
                 ),
-                child: const Text("Convert"),
               ),
             ],
           ),
