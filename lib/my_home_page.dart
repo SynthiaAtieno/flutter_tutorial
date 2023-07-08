@@ -17,6 +17,15 @@ class MyHomePage extends StatelessWidget {
       ),
     );
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 42, 100, 129),
+        elevation: 12,
+        title: const Text(
+          "Currency Converter",
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+      ),
       backgroundColor: Colors.blueGrey,
       body: SafeArea(
         child: Center(
@@ -47,7 +56,10 @@ class MyHomePage extends StatelessWidget {
                     decimal: true,
                   ),
                 ),
-              )
+                
+              ),
+              TextButton(onPressed: (){
+              }, child: const Text("Convert"))
             ],
           ),
         ),
