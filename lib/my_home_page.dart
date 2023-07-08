@@ -27,51 +27,50 @@ class MyHomePage extends StatelessWidget {
         centerTitle: true,
       ),
       backgroundColor: Colors.blueGrey,
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                '0',
-                style: TextStyle(
-                    fontSize: 55,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextField(
-                  style: const TextStyle(color: Colors.black),
-                  decoration: InputDecoration(
-                      hintText: 'Please enter the amount in USD',
-                      hintStyle: const TextStyle(color: Colors.black26),
-                      prefixIcon: const Icon(Icons.monetization_on_outlined),
-                      prefixIconColor: Colors.black26,
-                      focusedBorder: border,
-                      filled: true,
-                      fillColor: Colors.white,
-                      enabledBorder: border),
-                  keyboardType: const TextInputType.numberWithOptions(
-                    decimal: true,
-                  ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              '0',
+              style: TextStyle(
+                  fontSize: 55,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                style: const TextStyle(color: Colors.black),
+                decoration: InputDecoration(
+                    hintText: 'Please enter the amount in USD',
+                    hintStyle: const TextStyle(color: Colors.black26),
+                    prefixIcon: const Icon(Icons.monetization_on_outlined),
+                    prefixIconColor: Colors.black26,
+                    focusedBorder: border,
+                    filled: true,
+                    fillColor: Colors.white,
+                    enabledBorder: border),
+                keyboardType: const TextInputType.numberWithOptions(
+                  decimal: true,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextButton(
-                  onPressed: () {},
-                  style: const ButtonStyle(
-                    minimumSize:
-                        MaterialStatePropertyAll(Size(double.infinity, 50)),
-                    foregroundColor: MaterialStatePropertyAll(Colors.black),
-                    backgroundColor: MaterialStatePropertyAll(Colors.white),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                onPressed: () {},
+                style: const ButtonStyle(
+                  minimumSize: MaterialStatePropertyAll(
+                    Size(double.infinity, 50),
                   ),
-                  child: const Text("Convert"),
+                  foregroundColor: MaterialStatePropertyAll(Colors.black),
+                  backgroundColor: MaterialStatePropertyAll(Colors.white),
                 ),
+                child: const Text("Convert"),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
