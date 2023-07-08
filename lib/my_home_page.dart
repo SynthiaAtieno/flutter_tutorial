@@ -60,9 +60,11 @@ class MyHomePage extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(Colors.white),
-                    textStyle: MaterialStatePropertyAll(
-                        TextStyle(color: Colors.black))),
+                  backgroundColor: MaterialStatePropertyAll(Colors.white),
+                  textStyle: MaterialStatePropertyAll(
+                    TextStyle(color: Colors.black),
+                  ),
+                ),
                 child: const Text("Convert"),
               ),
             ],
