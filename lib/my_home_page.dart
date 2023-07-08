@@ -63,9 +63,6 @@ class MyHomePage extends StatelessWidget {
                   fixedSize: MaterialStatePropertyAll(Size(200, 50)),
                   foregroundColor: MaterialStatePropertyAll(Colors.black),
                   backgroundColor: MaterialStatePropertyAll(Colors.white),
-                  textStyle: MaterialStatePropertyAll(
-                    TextStyle(color: Colors.black),
-                  ),
                 ),
                 child: const Text("Convert"),
               ),
