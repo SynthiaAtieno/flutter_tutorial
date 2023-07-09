@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'KES $result',
+                'KES ${result.toStringAsPrecision(2)}',
                 style: const TextStyle(
                     fontSize: 55,
                     fontWeight: FontWeight.bold,
