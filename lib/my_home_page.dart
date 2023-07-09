@@ -60,18 +60,25 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {},
-                style: ButtonStyle(
-                  minimumSize: const MaterialStatePropertyAll(
-                    Size(double.infinity, 50),
-                  ),
-                  foregroundColor: const MaterialStatePropertyAll(Colors.black),
-                  backgroundColor: const MaterialStatePropertyAll(Colors.black),
-                  shape: MaterialStatePropertyAll(
-                    RoundedRectangleBorder(
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                  ),
-                ),
+                    minimumSize: const Size(double.infinity, 50)),
+                // style: ButtonStyle(
+                //   minimumSize: const MaterialStatePropertyAll(
+                //     Size(double.infinity, 50),
+                //   ),
+                //   foregroundColor: const MaterialStatePropertyAll(Colors.black),
+                //   backgroundColor: const MaterialStatePropertyAll(Colors.black),
+                //   shape: MaterialStatePropertyAll(
+                //     RoundedRectangleBorder(
+                //       borderRadius: BorderRadius.circular(10),
+                //     ),
+                //   ),
+                // ),
                 child: const Text(
                   "Convert",
                   style: TextStyle(color: Colors.white),
