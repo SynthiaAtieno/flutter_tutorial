@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
   @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  double result = 0.0;
+  final TextEditingController currency = TextEditingController();
+  @override
   Widget build(BuildContext context) {
-    double result = 0.0;
-    final TextEditingController currency = TextEditingController();
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(
         (16),
@@ -63,7 +68,9 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  result = double.parse(currency.text) * 134;
+                  setState(() {
+                    result = double.parse(currency.text) * 134;
+                  });
                 },
                 style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
