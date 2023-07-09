@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
+
   @override
   Widget build(BuildContext context) {
+      int result = 0;
+
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(
         (16),
