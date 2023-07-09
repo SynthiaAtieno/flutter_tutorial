@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-      int result = 0;
+    int result = 0;
+    final TextEditingController currency = TextEditingController();
 
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(
@@ -44,6 +44,7 @@ class MyHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextField(
+                controller: currency,
                 style: const TextStyle(color: Colors.black),
                 decoration: InputDecoration(
                     hintText: 'Please enter the amount in USD',
@@ -62,7 +63,9 @@ class MyHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  print(currency.text);
+                },
                 style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.black,
