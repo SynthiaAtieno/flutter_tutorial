@@ -5,9 +5,8 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int result = 0;
+    double result = 0.0;
     final TextEditingController currency = TextEditingController();
-
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(
         (16),
@@ -34,9 +33,9 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              '0',
-              style: TextStyle(
+            Text(
+              result.toString(),
+              style: const TextStyle(
                   fontSize: 55,
                   fontWeight: FontWeight.bold,
                   color: Colors.white),
@@ -64,7 +63,7 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  print(currency.text);
+                  result = double.parse(currency.text) * 134;
                 },
                 style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
