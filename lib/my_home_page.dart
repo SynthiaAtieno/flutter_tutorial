@@ -41,20 +41,23 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
       ),
       backgroundColor: Colors.blueGrey,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'KES $result',
-              style: const TextStyle(
-                  fontSize: 55,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'KES $result',
+                style: const TextStyle(
+                    fontSize: 55,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              TextField(
                 controller: currency,
                 style: const TextStyle(color: Colors.black),
                 decoration: InputDecoration(
@@ -70,10 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   decimal: true,
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton(
+              const SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
                 onPressed: convert,
                 style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
@@ -99,8 +102,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
