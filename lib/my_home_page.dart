@@ -61,15 +61,17 @@ class MyHomePage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ButtonStyle(
-                    minimumSize: const MaterialStatePropertyAll(
-                      Size(double.infinity, 50),
+                  minimumSize: const MaterialStatePropertyAll(
+                    Size(double.infinity, 50),
+                  ),
+                  foregroundColor: const MaterialStatePropertyAll(Colors.black),
+                  backgroundColor: const MaterialStatePropertyAll(Colors.black),
+                  shape: MaterialStatePropertyAll(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    foregroundColor:
-                        const MaterialStatePropertyAll(Colors.black),
-                    backgroundColor:
-                        const MaterialStatePropertyAll(Colors.black),
-                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+                  ),
+                ),
                 child: const Text(
                   "Convert",
                   style: TextStyle(color: Colors.white),
