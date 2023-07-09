@@ -68,7 +68,7 @@ class MyHomePage extends StatelessWidget {
                         const MaterialStatePropertyAll(Colors.black),
                     backgroundColor:
                         const MaterialStatePropertyAll(Colors.black),
-                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                    shape: MaterialStatePropertyAll(BeveledRectangleBorder(
                         borderRadius: BorderRadius.circular(10)))),
                 child: const Text(
                   "Convert",
