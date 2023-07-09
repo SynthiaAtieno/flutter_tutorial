@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              result.toString(),
+              'KES $result',
               style: const TextStyle(
                   fontSize: 55,
                   fontWeight: FontWeight.bold,
