@@ -10,6 +10,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   double result = 0.0;
   final TextEditingController currency = TextEditingController();
+
+  void convert() {
+    setState(() {
+      result = double.parse(currency.text) * 134;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final border = OutlineInputBorder(
@@ -67,11 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    result = double.parse(currency.text) * 134;
-                  });
-                },
+                onPressed: convert,
                 style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.black,
