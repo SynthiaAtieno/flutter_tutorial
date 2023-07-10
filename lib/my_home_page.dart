@@ -33,7 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 42, 100, 129),
-        elevation: 12,
         title: const Text(
           "Currency Converter",
           style: TextStyle(color: Colors.white),
