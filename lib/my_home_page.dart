@@ -18,6 +18,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void dispose() {
+    currency.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(
@@ -95,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 //     RoundedRectangleBorder(
                 //       borderRadius: BorderRadius.circular(10),
                 //     ),
-            
+
                 child: const Text(
                   "Convert",
                   style: TextStyle(color: Colors.white),
